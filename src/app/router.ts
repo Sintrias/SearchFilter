@@ -10,10 +10,12 @@ export const AppRoutes: Routes = [
     },
     {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        data: { title: 'Welcome to Search Filter' }
     },
     {
         path: 'signup',
-        component: SignupComponent
+        component: SignupComponent,
+        data: { title: 'Search Filter - Sign Up' }
     }
 ]
