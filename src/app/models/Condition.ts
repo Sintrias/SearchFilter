@@ -1,20 +1,20 @@
-export default class Search {
+export default class Condition {
     _id: string;
     ipaddr: string;
-    query: string;
+    include: string;
     date: Date;
     
     constructor() {
         this.ipaddr = "";
-        this.query = "";
+        this.include = "";
         this.date = new Date();
     }
 
-    static generateMockSearch() : Search {
+    static generateMockSearch() : Condition {
         return {
             _id: "new",
             ipaddr: "192.168.0.1",
-            query: "puppies",
+            include: "puppies",
             date: new Date()
         }
     }

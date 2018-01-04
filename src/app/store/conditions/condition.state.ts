@@ -1,6 +1,6 @@
-import Search from "../../models/Search";
+import Condition from "../../models/Condition";
 
-export interface SearchState extends Search{
+export interface ConditionState extends Condition{
     loading: boolean;
 
     editable: boolean;
@@ -14,7 +14,7 @@ export interface SearchState extends Search{
     error:boolean;
 
 }
-export const initializeSearchState  = function() {
+export const initializeConditionState  = function() {
     return {
         loading: false,
     
@@ -30,3 +30,18 @@ export const initializeSearchState  = function() {
         error: false,
     }
 }
+
+export interface ConditionListState{
+    conditions : ConditionState[];
+    loading: boolean;
+    pending: number;
+}
+
+export const initializeConditionListState = function() {
+    return{
+        loading:false,
+        pending: 0
+    }
+}
+
+
