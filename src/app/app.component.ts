@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Search Filter';
+  player;
+  onReady(player): void {
+    this.player = player;
+  }
+
+  onChange(event): void {
+    console.log(event)
+  }
 }

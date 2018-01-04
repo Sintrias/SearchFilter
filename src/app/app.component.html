@@ -1,4 +1,9 @@
 <app-navbar></app-navbar>
 <div>
+    <youtube-component
+    [videoId]="id"
+    (ready)="onReady($event)"
+    (change)="onChange($event)"
+></youtube-component>
   <router-outlet></router-outlet> 
 </div>
