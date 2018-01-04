@@ -10,7 +10,7 @@ export default class Condition {
         this.date = new Date();
     }
 
-    static generateMockSearch() : Condition {
+    static generateMockCondition() : Condition {
         return {
             _id: "new",
             ipaddr: "192.168.0.1",

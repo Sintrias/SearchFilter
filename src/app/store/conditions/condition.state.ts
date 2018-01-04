@@ -1,4 +1,4 @@
-import Condition from "../../models/Condition";
+import Condition from "../../models/condition.model";
 
 export interface ConditionState extends Condition{
     loading: boolean;
