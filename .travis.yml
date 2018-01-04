@@ -1,13 +1,15 @@
+dist: trusty
 language: node_js
 node_js:
-  - "8.9.1"
+  - "8"
 
 branches:
   only:
-    -master
+   - master
 
-before_script:
-  -npm install @angular/cli
+install:
+  - npm install @angular/cli
+  - npm install
 
 scripts:
-  -ng build --prod
+  -ng serve
